@@ -599,6 +599,27 @@ intoc=true]%
 	\newpage
 	\abstractpage
 	\sethyp
+
+	\tableofcontents
+	
+	% Abbildungsverzeichnis erzeugen
+	\listoffigures
+	
+	% Tabellenverzeichnis erzeugen
+	\listoftables
+	
+	
+	\ifsymbols
+	% Symbolverzeichnis ausgeben
+	% Wenn Sie kein Symbolverzeichnis haben, kommentieren Sie die folgende Zeile aus
+	\printglossary[type=symbolslist,style=symbunitlong,title=\hsmalistofsymbols]
+	\fi
+	
+	\ifsourcecode
+	%Sourcecode
+	\lstlistoflistings
+	%\IfFileExists{thesis.lol}{\lstlistoflistings}{}
+	\fi
 }
 
 
@@ -610,26 +631,6 @@ intoc=true]%
 		% Glossar ausgeben
 		\printglossary[style=altlist, nonumberlist, title=\hsmaglossary]
 	\fi
-
-	% Abbildungsverzeichnis erzeugen
-	\listoffigures
-
-	% Tabellenverzeichnis erzeugen
-	\listoftables
-
-
-	\ifsymbols
-		% Symbolverzeichnis ausgeben
-		% Wenn Sie kein Symbolverzeichnis haben, kommentieren Sie die folgende Zeile aus
-		\printglossary[type=symbolslist,style=symbunitlong,title=\hsmalistofsymbols]
-	\fi
-
-	\ifsourcecode
-		%Sourcecode
-		\lstlistoflistings
-		%\IfFileExists{thesis.lol}{\lstlistoflistings}{}
-	\fi
-
 
 	% Literaturverzeichnis erzeugen
 	\printbibliography
