@@ -196,6 +196,11 @@
 \RequirePackage{amsmath}              % Mathematische Formeln
 \RequirePackage{amsfonts}             % Mathematische Zeichensätze
 \RequirePackage{siunitx}			  % Darstellung von Einheiten
+\sisetup{locale = DE,
+per-mode=fraction}  
+
+\RequirePackage{mhchem}				  % Chemische Formeln
+\RequirePackage{chemfig}			  % Chemische Strukturen
 
 \RequirePackage[inline]{enumitem} 	  % Eigene Listen definieren können und diese auch innerhalb des Textes nutzen können
 
