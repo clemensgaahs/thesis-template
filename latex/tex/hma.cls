@@ -78,7 +78,7 @@
 	footsepline=false,      % Keine Trennlinie am Fuß der Seite
 	bibliography=totoc,     % Literaturverzeichnis in das Inhaltsverzeichnis aufnehmen
 	DIV=7,                  % Verhältnis der Ränder zum bedruckten Bereich
-	chapterprefix=true,     % Kapitel x vor dem Kapitelnamen
+	chapterprefix=false,     % Kapitel x vor dem Kapitelnamen
 	cleardoublepage=plain,
 	numbers=noenddot, 		% Keine Endpunkte bei der Überschriftennummerierung
 	listof=totoc			%Einträge ins Inhaltsverzeichnis aufnehmen
